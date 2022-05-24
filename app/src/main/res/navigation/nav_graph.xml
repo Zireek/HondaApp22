@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.hondaapp2.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_cocheFragment"
+            app:destination="@id/cocheFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motoFragment"
+            app:destination="@id/motoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buscarFragment"
+        android:name="com.example.hondaapp2.BuscarFragment"
+        android:label="fragment_buscar2"
+        tools:layout="@layout/fragment_buscar" >
+        <action
+            android:id="@+id/action_buscarFragment_to_gasolinaFragment2"
+            app:destination="@id/gasolinaFragment" />
+        <action
+            android:id="@+id/action_buscarFragment_to_hibridoFragment2"
+            app:destination="@id/hibridoFragment" />
+        <action
+            android:id="@+id/action_buscarFragment_to_motosupersportFragment2"
+            app:destination="@id/motosupersportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocheFragment"
+        android:name="com.example.hondaapp2.CocheFragment"
+        android:label="fragment_coche2"
+        tools:layout="@layout/fragment_coche" >
+        <action
+            android:id="@+id/action_cocheFragment_to_hibridoFragment"
+            app:destination="@id/hibridoFragment" />
+        <action
+            android:id="@+id/action_cocheFragment_to_gasolinaFragment"
+            app:destination="@id/gasolinaFragment" />
+        <action
+            android:id="@+id/action_cocheFragment_to_electricoFragment"
+            app:destination="@id/electricoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/motoFragment"
+        android:name="com.example.hondaapp2.MotoFragment"
+        android:label="fragment_moto2"
+        tools:layout="@layout/fragment_moto" >
+        <action
+            android:id="@+id/action_motoFragment_to_motosupersportFragment"
+            app:destination="@id/motosupersportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactoFragment"
+        android:name="com.example.hondaapp2.ContactoFragment"
+        android:label="fragment_contacto2"
+        tools:layout="@layout/fragment_contacto" >
+        <action
+            android:id="@+id/action_contactoFragment_to_enviadoFragment"
+            app:destination="@id/enviadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/motosupersportFragment"
+        android:name="com.example.hondaapp2.MotosupersportFragment"
+        android:label="fragment_motosupersport"
+        tools:layout="@layout/fragment_motosupersport" >
+        <action
+            android:id="@+id/action_motosupersportFragment_to_comprarmotoFragment"
+            app:destination="@id/comprarmotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hibridoFragment"
+        android:name="com.example.hondaapp2.hibridoFragment"
+        android:label="fragment_hibrido"
+        tools:layout="@layout/fragment_hibrido" />
+    <fragment
+        android:id="@+id/electricoFragment"
+        android:name="com.example.hondaapp2.ElectricoFragment"
+        android:label="fragment_electrico"
+        tools:layout="@layout/fragment_electrico" >
+        <action
+            android:id="@+id/action_electricoFragment_to_comprarcoche3Fragment"
+            app:destination="@id/comprarcoche3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gasolinaFragment"
+        android:name="com.example.hondaapp2.gasolinaFragment"
+        android:label="fragment_gasolina"
+        tools:layout="@layout/fragment_gasolina" />
+    <fragment
+        android:id="@+id/comprarmotoFragment"
+        android:name="com.example.hondaapp2.ComprarmotoFragment"
+        android:label="fragment_comprarmoto"
+        tools:layout="@layout/fragment_comprarmoto" >
+        <action
+            android:id="@+id/action_comprarmotoFragment_to_verificarcompraFragment"
+            app:destination="@id/verificarcompraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comprarcoche3Fragment"
+        android:name="com.example.hondaapp2.Comprarcoche3Fragment"
+        android:label="fragment_comprarcoche3"
+        tools:layout="@layout/fragment_comprarcoche3" >
+        <action
+            android:id="@+id/action_comprarcoche3Fragment_to_verificarcompraFragment"
+            app:destination="@id/verificarcompraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enviadoFragment"
+        android:name="com.example.hondaapp2.enviadoFragment"
+        android:label="fragment_enviado"
+        tools:layout="@layout/fragment_enviado" >
+        <action
+            android:id="@+id/action_enviadoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment2"
+        android:name="com.example.hondaapp2.perfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment2_to_salirFragment"
+            app:destination="@id/salirFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/salirFragment"
+        android:name="com.example.hondaapp2.salirFragment"
+        android:label="fragment_salir"
+        tools:layout="@layout/fragment_salir" />
+    <fragment
+        android:id="@+id/verificarcompraFragment"
+        android:name="com.example.hondaapp2.verificarcompraFragment"
+        android:label="fragment_verificarcompra"
+        tools:layout="@layout/fragment_verificarcompra" >
+        <action
+            android:id="@+id/action_verificarcompraFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

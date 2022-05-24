@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/homeFragment"
+        android:title="Inicio"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:id="@+id/buscarFragment"
+        android:title="Buscar"
+        android:icon="@drawable/ic_baseline_search_24"/>
+    <item android:id="@+id/cocheFragment"
+        android:title="Coches"
+        android:icon="@drawable/ic_baseline_directions_car_24"/>
+    <item android:id="@+id/motoFragment"
+        android:title="Motos"
+        android:icon="@drawable/ic_baseline_directions_bike_24"/>
+    <item android:id="@+id/perfilFragment2"
+        android:title="Perfil"
+        android:icon="@drawable/ic_baseline_person_24"/>
+    <item android:id="@+id/contactoFragment"
+        android:title="Contacto"
+        android:icon="@drawable/ic_baseline_local_phone_24"/>
+
+
+</menu>
