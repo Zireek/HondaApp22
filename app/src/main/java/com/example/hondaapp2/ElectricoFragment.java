@@ -7,10 +7,13 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.royrodriguez.transitionbutton.TransitionButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,6 +65,7 @@ public class ElectricoFragment extends Fragment {
     Button bcomprare;
     NavController navController;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -71,9 +75,13 @@ public class ElectricoFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @NonNull Bundle savedInstanceSrate) {
         super.onViewCreated(view, savedInstanceSrate);
 
+
+
         navController = Navigation.findNavController(view);
 
         bcomprare = view.findViewById(R.id.bcomprare);
+
+
 
         bcomprare.setOnClickListener(new View.OnClickListener() {
             @Override
